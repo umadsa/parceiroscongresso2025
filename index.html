@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parceiros UMADSA - Encontre a Excelência</title>
+    
+    <!-- Carregamento do Tailwind CSS para um design moderno e responsivo --><script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome para ícones --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        /* Estilos Personalizados */
+        body { font-family: 'Inter', sans-serif; background-color: #0d1117; color: #e5e7eb; }
+        .header-section { background-color: #161b22; padding: 2.5rem 0; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); }
+        .partner-card { background-color: #161b22; border: 1px solid #2f333a; transition: transform 0.3s; }
+        .partner-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(45, 212, 191, 0.2); }
+        .logo-placeholder { 
+            height: 100px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            background-color: #1f242b; /* Fundo padrão escuro */
+            border-radius: 0.5rem 0.5rem 0 0; 
+            overflow: hidden; /* Garante que o logo não vaze */
+        }
+        .logo-placeholder img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain; /* Ajusta a imagem dentro do contêiner sem cortar */
+            padding: 10px; /* Adiciona um pequeno padding para logos que chegam muito perto da borda */
+        }
+        /* Estilos para logos que precisam de fundo branco */
+        .logo-white-bg {
+            background-color: #FFFFFF; 
+        }
+        /* Estilo para logo que precisa de fundo verde */
+        .logo-green-bg {
+            background-color: #25D366; /* Um verde semelhante ao WhatsApp */
+        }
+        .btn-whatsapp { background-color: #25D366; color: white; transition: background-color 0.3s; }
+        .btn-whatsapp:hover { background-color: #1e9e4f; }
+        .btn-instagram { background-color: #E1306C; color: white; transition: background-color 0.3s; }
+        .btn-instagram:hover { background-color: #b32551; }
+        .btn-site { background-color: #6c757d; color: white; transition: background-color 0.3s; }
+        .btn-site:hover { background-color: #5a6268; }
+        .header-logo { max-height: 120px; width: auto; }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho e Campo de Busca - LOGO DO CONGRESSO --><header class="header-section text-center">
+        <!-- Substituído o h1 pelo logotipo fornecido --><img src="https://imgur.com/iN6o0TW.png" alt="Logotipo Oficial do Congresso UMADSA" class="header-logo mx-auto">
+        
+        <p class="mt-4 text-gray-400 max-w-2xl mx-auto">Encontre aqui a excelência em serviços de quem apoia o nosso Congresso. Use a busca para encontrar rapidamente o parceiro desejado!</p>
+        
+        <!-- Campo de Busca --><div class="container mx-auto mt-6 px-4">
+            <div class="relative">
+                <input type="text" id="search-input" class="w-full p-3 pl-12 text-gray-900 bg-white border border-gray-600 rounded-lg focus:ring-teal-500 focus:border-teal-500" placeholder="Buscar parceiro por nome, serviço ou ramo..." onkeyup="filterPartners()">
+                <i class="fas fa-search absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-500"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção de Parceiros --><div class="container mx-auto my-10 px-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="partners-list">
+            
+            <!-- 1. LINEAR AMBIENTES PLANEJADOS --><div class="partner-item" data-search-terms="Linear Ambientes móveis planejados marcenaria design qualidade">
+                <!-- Novo logo da Linear --><div class="card partner-card rounded-xl overflow-hidden shadow-2xl">
+                    <div class="logo-placeholder"><img src="https://i.imgur.com/lz6cLSc.png" alt="Logo Linear" class="max-w-full max-h-full p-2"></div>
+                    <div class="p-4">
+                        <h5 class="text-xl font-semibold text-teal-400">Linear Ambientes Planejados</h5>
+                        <p class="text-xs text-gray-400 mt-2 h-10 overflow-hidden">Móveis planejados sob medida com 24 anos de experiência e fábrica própria, garantindo design e qualidade.</p>
+                        <div class="mt-4 space-y-2">
+                            <a href="https://wa.me/5511917040514?text=Ola encontrei você na pagina dos Parceiros UMADSA. Quero mais informaçoes sobre seus serviços." target="_blank" class="btn btn-whatsapp block py-2 rounded-lg font-bold"><i class="fab fa-whatsapp"></i> Chamar no WhatsApp</a>
+                            <a href="https://www.instagram.com/linearambientesplanejados/" target="_blank" class="btn btn-instagram block py-2 rounded-lg font-bold"><i class="fab fa-instagram"></i> Siga no Instagram</a>
+                            <a href="https://linearambientes.com/solicite-seu-orcamento/" target="_blank" class="btn btn-site block py-2 rounded-lg font-bold"><i class="fas fa-globe"></i> Acesse o Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. HUMANIZED CLÍNICA ODONTOLÓGICA --><div class="partner-item" data-search-terms="Humanized clínica odontológica clareamento sorriso atendimento humano">
+                <div class="card partner-card rounded-xl overflow-hidden shadow-2xl">
+                    <!-- Fundo branco adicionado --><div class="logo-placeholder logo-white-bg"><img src="https://i.imgur.com/PpdUohJ.png" alt="Logo Humanized" class="max-w-full max-h-full p-2"></div>
+                    <div class="p-4">
+                        <h5 class="text-xl font-semibold text-teal-400">Humanized Clínica Odontológica</h5>
+                        <p class="text-xs text-gray-400 mt-2 h-10 overflow-hidden">Clínica que une excelência clínica e atendimento humano, oferecendo tratamentos completos e clareamento a laser.</p>
+                        <div class="mt-4 space-y-2">
+                            <a href="https://wa.me/5511959635342?text=Ola encontrei você na pagina dos Parceiros UMADSA. Quero mais informaçoes sobre seus serviços." target="_blank" class="btn btn-whatsapp block py-2 rounded-lg font-bold"><i class="fab fa-whatsapp"></i> Chamar no WhatsApp</a>
+                            <a href="https://www.instagram.com/humanizedclinic/" target="_blank" class="btn btn-instagram block py-2 rounded-lg font-bold"><i class="fab fa-instagram"></i> Siga no Instagram</a>
+                            <a href="https://humanizedodontologia.com.br/" target="_blank" class="btn btn-site block py-2 rounded-lg font-bold"><i class="fas fa-globe"></i> Acesse o Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. GRUPO NEXTRISE --><div class="partner-item" data-search-terms="Grupo Nextrise marketing digital automação tecnologia consultoria">
+                <div class="card partner-card rounded-xl overflow-hidden shadow-2xl">
+                    <div class="logo-placeholder"><img src="https://i.imgur.com/tYiqJEY.png" alt="Logo Nextrise" class="max-w-full max-h-full p-2"></div>
+                    <div class="p-4">
+                        <h5 class="text-xl font-semibold text-teal-400">Grupo Nextrise</h5>
+                        <p class="text-xs text-gray-400 mt-2 h-10 overflow-hidden">Soluções completas em Marketing Digital, Automação e Tecnologia, turbinando o crescimento de empresas e negócios.</p>
+                        <div class="mt-4 space-y-2">
+                            <a href="https://wa.me/5511999251821?text=Ola encontrei você na pagina dos Parceiros UMADSA. Quero mais informaçoes sobre seus serviços." target="_blank" class="btn btn-whatsapp block py-2 rounded-lg font-bold"><i class="fab fa-whatsapp"></i> Chamar no WhatsApp</a>
+                            <a href="https://www.instagram.com/gruponextrise/" target="_blank" class="btn btn-instagram block py-2 rounded-lg font-bold"><i class="fab fa-instagram"></i> Siga no Instagram</a>
+                            <a href="https://gruponextrise.carrd.co/" target="_blank" class="btn btn-site block py-2 rounded-lg font-bold"><i class="fas fa-globe"></i> Acesse o Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. GUARDE SEGUROS --><div class="partner-item" data-search-terms="Guarde Seguros consórcios patrimônio proteção carros casa">
+                <div class="card partner-card rounded-xl overflow-hidden shadow-2xl">
+                    <div class="logo-placeholder"><img src="https://i.imgur.com/4WBQ56h.png" alt="Logo Guarde Seguros" class="max-w-full max-h-full p-2"></div>
+                    <div class="p-4">
+                        <h5 class="text-xl font-semibold text-teal-400">Guarde Seguros</h5>
+                        <p class="text-xs text-gray-400 mt-2 h-10 overflow-hidden">Especialistas em proteger seu patrimônio. Oferece seguros e consórcios sob medida para garantir tranquilidade e realizar sonhos.</p>
+                        <div class="mt-4 space-y-2">
+                            <a href="https://wa.me/5511949144824?text=Ola encontrei você na pagina dos Parceiros UMADSA. Quero mais informaçoes sobre seus serviços." target="_blank" class="btn btn-whatsapp block py-2 rounded-lg font-bold"><i class="fab fa-whatsapp"></i> Chamar no WhatsApp</a>
+                            <a href="https://www.instagram.com/guardeseguros/" target="_blank" class="btn btn-instagram block py-2 rounded-lg font-bold"><i class="fab fa-instagram"></i> Siga no Instagram</a>
+                            <a href="https://www.guardeseguros.com.br/" target="_blank" class="btn btn-site block py-2 rounded-lg font-bold"><i class="fas fa-globe"></i> Acesse o Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. GORETE CORRETORA DE IMÓVEIS --><div class="partner-item" data-search-terms="Gorete Imóveis corretora casa apartamento popular padrão">
+                <div class="card partner-card rounded-xl overflow-hidden shadow-2xl">
+                    <!-- Fundo branco adicionado --><div class="logo-placeholder logo-white-bg"><img src="https://i.imgur.com/dTiJiYG.png" alt="Logo Gorete" class="max-w-full max-h-full p-2"></div>
+                    <div class="p-4">
+                        <h5 class="text-xl font-semibold text-teal-400">Gorete Corretora de Imóveis</h5>
+                        <p class="text-xs text-gray-400 mt-2 h-10 overflow-hidden">Atende todas as construtoras de SP, do popular ao altíssimo padrão, para você realizar o sonho da casa própria.</p>
+                        <div class="mt-4 space-y-2">
+                            <a href="https://wa.me/5511968192921?text=Ola encontrei você na pagina dos Parceiros UMADSA. Quero mais informaçoes sobre seus services." target="_blank" class="btn btn-whatsapp block py-2 rounded-lg font-bold"><i class="fab fa-whatsapp"></i> Chamar no WhatsApp</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. ÓTICA BETHEL --><div class="partner-item" data-search-terms="Ótica Bethel óculos lentes visão consulta gratuita">
+                <div class="card partner-card rounded-xl overflow-hidden shadow-2xl">
+                    <!-- Fundo verde adicionado --><div class="logo-placeholder logo-green-bg"><img src="https://i.imgur.com/MBDdwOB.png" alt="Logo Bethel" class="max-w-full max-h-full p-2"></div>
+                    <div class="p-4">
+                        <h5 class="text-xl font-semibold text-teal-400">Ótica Bethel</h5>
+                        <p class="text-xs text-gray-400 mt-2 h-10 overflow-hidden">Saúde visual com qualidade há mais de 15 anos. Oferece consultas 100% gratuitas e diversas opções de óculos.</p>
+                        <div class="mt-4 space-y-2">
+                            <a href="https://wa.me/55551156879341?text=Ola encontrei você na pagina dos Parceiros UMADSA. Quero mais informaçoes sobre seus services." target="_blank" class="btn btn-whatsapp block py-2 rounded-lg font-bold"><i class="fab fa-whatsapp"></i> Chamar no WhatsApp</a>
+                            <a href="https://www.instagram.com/otica_bethel/" target="_blank" class="btn btn-instagram block py-2 rounded-lg font-bold"><i class="fab fa-instagram"></i> Siga no Instagram</a>
+                            <a href="https://oticabethel.com.br/" target="_blank" class="btn btn-site block py-2 rounded-lg font-bold"><i class="fas fa-globe"></i> Acesse o Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7. ARTHOME AUTOMAÇÃO --><div class="partner-item" data-search-terms="ArtHome automação residencial segurança CFTV Wi-Fi">
+                <div class="card partner-card rounded-xl overflow-hidden shadow-2xl">
+                    <div class="logo-placeholder"><img src="https://i.imgur.com/MHk7tP1.png" alt="Logo ArtHome" class="max-w-full max-h-full p-2"></div>
+                    <div class="p-4">
+                        <h5 class="text-xl font-semibold text-teal-400">ArtHome Automação</h5>
+                        <p class="text-xs text-gray-400 mt-2 h-10 overflow-hidden">Transforma seu lar ou empresa em um ambiente inteligente, seguro e moderno com tecnologia de automação de ponta.</p>
+                        <div class="mt-4 space-y-2">
+                            <a href="https://wa.me/5511992346934?text=Ola encontrei você na pagina dos Parceiros UMADSA. Quero mais informaçoes sobre seus services." target="_blank" class="btn btn-whatsapp block py-2 rounded-lg font-bold"><i class="fab fa-whatsapp"></i> Chamar no WhatsApp</a>
+                            <a href="https://www.instagram.com/arthome.automacao/" target="_blank" class="btn btn-instagram block py-2 rounded-lg font-bold"><i class="fab fa-instagram"></i> Siga no Instagram</a>
+                            <a href="https://www.arthomeautomacao.com.br/" target="_blank" class="btn btn-site block py-2 rounded-lg font-bold"><i class="fas fa-globe"></i> Acesse o Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 8. MIGLES FIT --><div class="partner-item" data-search-terms="Migles Fit marmitas saudáveis alimentação dieta fitness">
+                <div class="card partner-card rounded-xl overflow-hidden shadow-2xl">
+                    <div class="logo-placeholder"><img src="https://i.imgur.com/lPO0PPc.png" alt="Logo Migles Fit" class="max-w-full max-h-full p-2"></div>
+                    <div class="p-4">
+                        <h5 class="text-xl font-semibold text-teal-400">Migles Fit</h5>
+                        <p class="text-xs text-gray-400 mt-2 h-10 overflow-hidden">Marmitas saudáveis, práticas e saborosas, ideais para a rotina de quem busca uma alimentação equilibrada e rápida.</p>
+                        <div class="mt-4 space-y-2">
+                            <a href="https://wa.me/5511947003392?text=Ola encontrei você na pagina dos Parceiros UMADSA. Quero mais informaçoes sobre seus services." target="_blank" class="btn btn-whatsapp block py-2 rounded-lg font-bold"><i class="fab fa-whatsapp"></i> Chamar no WhatsApp</a>
+                            <a href="https://www.instagram.com/miglesfit/" target="_blank" class="btn btn-instagram block py-2 rounded-lg font-bold"><i class="fab fa-instagram"></i> Siga no Instagram</a>
+                            <a href="https://miglesfit.com.br/" target="_blank" class="btn btn-site block py-2 rounded-lg font-bold"><i class="fas fa-globe"></i> Acesse o Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 9. ALIANÇA DIVINA CURADORIA DE MODA --><div class="partner-item" data-search-terms="Aliança Divina moda vestuário estilo propósito autoestima">
+                <div class="card partner-card rounded-xl overflow-hidden shadow-2xl">
+                    <div class="logo-placeholder"><img src="https://i.imgur.com/09Nnfvv.png" alt="Logo Aliança Divina" class="max-w-full max-h-full p-2"></div>
+                    <div class="p-4">
+                        <h5 class="text-xl font-semibold text-teal-400">Aliança Divina Curadoria de Moda</h5>
+                        <p class="text-xs text-gray-400 mt-2 h-10 overflow-hidden">Curadoria de Moda que busca peças que inspiram e trazem propósito, reforçando sua autoestima e estilo.</p>
+                        <div class="mt-4 space-y-2">
+                            <a href="https://wa.me/551193390519?text=Ola encontrei você na pagina dos Parceiros UMADSA. Quero mais informaçoes sobre seus services." target="_blank" class="btn btn-whatsapp block py-2 rounded-lg font-bold"><i class="fab fa-whatsapp"></i> Chamar no WhatsApp</a>
+                            <a href="https://www.instagram.com/aliacadivinacuradoriademoda/" target="_blank" class="btn btn-instagram block py-2 rounded-lg font-bold"><i class="fab fa-instagram"></i> Siga no Instagram</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 10. JS SEMI JOIAS --><div class="partner-item" data-search-terms="JS Semijoias joias presentes brilho elegância">
+                <div class="card partner-card rounded-xl overflow-hidden shadow-2xl">
+                    <div class="logo-placeholder"><img src="https://i.imgur.com/Y0dd0PG.png" alt="Logo JS Semijoias" class="max-w-full max-h-full p-2"></div>
+                    <div class="p-4">
+                        <h5 class="text-xl font-semibold text-teal-400">JS Semijoias</h5>
+                        <p class="text-xs text-gray-400 mt-2 h-10 overflow-hidden">Peças de alto brilho, elegância e sofisticação. O presente ideal para valorizar quem você ama ou sua própria imagem.</p>
+                        <div class="mt-4 space-y-2">
+                            <a href="https://wa.me/5511992676576?text=Ola encontrei você na pagina dos Parceiros UMADSA. Quero mais informaçoes sobre seus services." target="_blank" class="btn btn-whatsapp block py-2 rounded-lg font-bold"><i class="fab fa-whatsapp"></i> Chamar no WhatsApp</a>
+                            <a href="https://www.instagram.com/jsjoiassemi/" target="_blank" class="btn btn-instagram block py-2 rounded-lg font-bold"><i class="fab fa-instagram"></i> Siga no Instagram</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 11. BUFFET MAGIC TOWER --><div class="partner-item" data-search-terms="Buffet Magic Tower infantil festa eventos alegria">
+                <div class="card partner-card rounded-xl overflow-hidden shadow-2xl">
+                    <!-- Fundo branco adicionado --><div class="logo-placeholder logo-white-bg"><img src="https://i.imgur.com/rC6xK02.png" alt="Logo Magic Tower" class="max-w-full max-h-full p-2"></div>
+                    <div class="p-4">
+                        <h5 class="text-xl font-semibold text-teal-400">Buffet Magic Tower</h5>
+                        <p class="text-xs text-gray-400 mt-2 h-10 overflow-hidden">Buffet Infantil e de Eventos focado em realizar sonhos, com momentos de alegria, diversão e gastronomia saborosa.</p>
+                        <div class="mt-4 space-y-2">
+                            <a href="https://wa.me/5511966261532?text=Ola encontrei você na pagina dos Parceiros UMADSA. Quero mais informaçoes sobre seus services." target="_blank" class="btn btn-whatsapp block py-2 rounded-lg font-bold"><i class="fab fa-whatsapp"></i> Chamar no WhatsApp</a>
+                            <a href="https://www.instagram.com/buffetmagictoweroficial/" target="_blank" class="btn btn-instagram block py-2 rounded-lg font-bold"><i class="fab fa-instagram"></i> Siga no Instagram</a>
+                            <a href="https://www.buffetmagictower.com.br/" target="_blank" class="btn btn-site block py-2 rounded-lg font-bold"><i class="fas fa-globe"></i> Acesse o Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 12. SP AÇAÍ CAPITAL --><div class="partner-item" data-search-terms="SP Açaí Capital energia sabor delivery">
+                <div class="card partner-card rounded-xl overflow-hidden shadow-2xl">
+                    <!-- Fundo branco mantido --><div class="logo-placeholder logo-white-bg"><img src="https://i.imgur.com/Hsmjo4T.png" alt="Logo SP Açaí Capital" class="max-w-full max-h-full p-2"></div>
+                    <div class="p-4">
+                        <h5 class="text-xl font-semibold text-teal-400">SP Açaí Capital</h5>
+                        <p class="text-xs text-gray-400 mt-2 h-10 overflow-hidden">O seu açaí, com energia e sabor. Perfeito para qualquer momento do dia. Nunca é tarde para pedir o seu!</p>
+                        <div class="mt-4 space-y-2">
+                            <a href="https://wa.me/5511950183918?text=Ola encontrei você na pagina dos Parceiros UMADSA. Quero mais informaçoes sobre seus services." target="_blank" class="btn btn-whatsapp block py-2 rounded-lg font-bold"><i class="fab fa-whatsapp"></i> Chamar no WhatsApp</a>
+                            <a href="https://www.instagram.com/acaispcapital/?hl=pt-br" target="_blank" class="btn btn-instagram block py-2 rounded-lg font-bold"><i class="fab fa-instagram"></i> Siga no Instagram</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 13. POLO PARELHEIROS --><div class="partner-item" data-search-terms="Rede Parelheiros fazendinha restaurante comida costela sacolão mercado">
+                <div class="card partner-card rounded-xl overflow-hidden shadow-2xl">
+                    <div class="logo-placeholder"><img src="https://i.imgur.com/q8OYKXA.png" alt="Logo Polo Parelheiros" class="max-w-full max-h-full p-2"></div>
+                    <div class="p-4">
+                        <h5 class="text-xl font-semibold text-teal-400">Polo Parelheiros</h5> 
+                        <p class="text-xs text-gray-400 mt-2 h-10 overflow-hidden">Polo de sabor local: Fazendinha, Sacolão, Mercado. Qualidade, conveniência e a famosa Costela no Fogo de Chão.</p>
+                        <div class="mt-4 space-y-2">
+                            <a href="https://wa.me/5511979697566?text=Ola encontrei você na pagina dos Parceiros UMADSA. Quero mais informaçoes sobre seus services." target="_blank" class="btn btn-whatsapp block py-2 rounded-lg font-bold"><i class="fab fa-whatsapp"></i> Chamar no WhatsApp</a>
+                            <a href="https://www.instagram.com/fazendinhaparelheiros/?hl=pt-br" target="_blank" class="btn btn-instagram block py-2 rounded-lg font-bold"><i class="fab fa-instagram"></i> Siga Fazendinha</a>
+                            <a href="https://www.instagram.com/osacolaoparelheiros/?hl=pt-br" target="_blank" class="btn btn-instagram block py-2 rounded-lg font-bold"><i class="fab fa-instagram"></i> Siga Sacolão</a>
+                            <a href="https://www.instagram.com/mercadodo_bairroo/?hl=pt-br" target="_blank" class="btn btn-instagram block py-2 rounded-lg font-bold"><i class="fab fa-instagram"></i> Mercado Do Bairro</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 14. BRASIL EXCELLENCE --><div class="partner-item" data-search-terms="Brasil Excellence terceirização limpeza condomínios portaria excelência">
+                <div class="card partner-card rounded-xl overflow-hidden shadow-2xl">
+                    <div class="logo-placeholder"><img src="https://i.imgur.com/DC9iOEH.png" alt="Logo Brasil Excellence" class="max-w-full max-h-full p-2"></div>
+                    <div class="p-4">
+                        <h5 class="text-xl font-semibold text-teal-400">Brasil Excellence</h5>
+                        <p class="text-xs text-gray-400 mt-2 h-10 overflow-hidden">Soluções em serviços de terceirização (limpeza, conservação e portaria) com excelência para empresas e condomínios.</p>
+                        <div class="mt-4 space-y-2">
+                            <a href="https://wa.me/11988056325?text=Ola encontrei você na pagina dos Parceiros UMADSA. Quero mais informaçoes sobre seus services." target="_blank" class="btn btn-whatsapp block py-2 rounded-lg font-bold"><i class="fab fa-whatsapp"></i> Chamar no WhatsApp</a>
+                            <a href="https://www.instagram.com/excellenceservices" target="_blank" class="btn btn-instagram block py-2 rounded-lg font-bold"><i class="fab fa-instagram"></i> Siga no Instagram</a>
+                            <a href="[LINK_SITE_BRASIL]" target="_blank" class="btn btn-site block py-2 rounded-lg font-bold"><i class="fas fa-globe"></i> Acesse o Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 15. CESTAS BALAIO DE GATO (NOVO) --><div class="partner-item" data-search-terms="Cestas Balaio de Gato presentes café da manhã brindes corporativos">
+                <div class="card partner-card rounded-xl overflow-hidden shadow-2xl">
+                    <!-- Fundo branco mantido --><div class="logo-placeholder logo-white-bg"><img src="https://i.imgur.com/ryPJE1n.png" alt="Logo Cestas Balaio de Gato" class="max-w-full max-h-full p-2"></div>
+                    <div class="p-4">
+                        <h5 class="text-xl font-semibold text-teal-400">Cestas Balaio de Gato</h5>
+                        <p class="text-xs text-gray-400 mt-2 h-10 overflow-hidden">Presentes memoráveis e sofisticados, cestas de café da manhã, chocolates e brindes corporativos personalizados.</p>
+                        <div class="mt-4 space-y-2">
+                            <a href="https://wa.me/5511974277708?text=Ola encontrei você na pagina dos Parceiros UMADSA. Quero mais informaçoes sobre seus services." target="_blank" class="btn btn-whatsapp block py-2 rounded-lg font-bold"><i class="fab fa-whatsapp"></i> Chamar no WhatsApp</a>
+                            <a href="https://www.instagram.com/cestasbalaiodegato/" target="_blank" class="btn btn-instagram block py-2 rounded-lg font-bold"><i class="fab fa-instagram"></i> Siga no Instagram</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fim da Lista de Parceiros --></div>
+    </div>
+    
+    <!-- Script de Busca/Filtro --><script>
+        // Função para filtrar os cartões de parceiros com base na entrada do usuário
+        function filterPartners() {
+            const input = document.getElementById('search-input');
+            const filter = input.value.toUpperCase();
+            const list = document.getElementById('partners-list');
+            const items = list.getElementsByClassName('partner-item');
+            
+            for (let i = 0; i < items.length; i++) {
+                // Pega os termos de busca definidos no atributo data-search-terms
+                let text = items[i].getAttribute('data-search-terms').toUpperCase();
+                
+                // Exibe o item se os termos de busca contiverem o filtro
+                if (text.indexOf(filter) > -1) {
+                    items[i].style.display = "";
+                } else {
+                    items[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
